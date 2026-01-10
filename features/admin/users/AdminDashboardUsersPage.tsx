@@ -2,14 +2,13 @@
 
 import AdminHeader from '../components/AdminHeader'
 import AdminSideBar from '../components/AdminSideBar'
-import AdminDashboardPageMainScreen from './components/AdminDashboardPageMainScreen'
 interface Props {
   username: string
   email: string
 }
-export default function AdminDashboardPage({ username, email }: Props) {
+export default function AdminDashboardUsersPage({ username, email }: Props) {
   return (
-    <div className="h-full bg-mainFaintBlue">
+    <div className="h-full">
       <AdminSideBar
         bgColor="bg-black/90"
         email={email}
@@ -18,7 +17,6 @@ export default function AdminDashboardPage({ username, email }: Props) {
         hideInMobile={true}
       />
       <AdminHeader email={email} username={username} />
-      <AdminDashboardPageMainScreen />
     </div>
   )
 }

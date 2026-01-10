@@ -9,6 +9,7 @@ interface Props {
   username: string
   email: string
   bgColor: string
+  hideInMobile: boolean
 }
 
 export default function AdminSideBar({
@@ -16,10 +17,13 @@ export default function AdminSideBar({
   username,
   email,
   bgColor,
+  hideInMobile,
 }: Props) {
   return (
     <section
-      className={`${width} ${bgColor} px-8 py-4 flex flex-col h-full justify-between text-gray-200 `}
+      className={`${width} ${bgColor} ${
+        hideInMobile && 'hidden'
+      } px-8 py-4 md:flex flex-col h-full justify-between text-gray-200 `}
     >
       <div className="flex items-center gap-x-2">
         <LayoutGrid className="box-content p-2.5 rounded-xl bg-blue-100 text-black/70" />

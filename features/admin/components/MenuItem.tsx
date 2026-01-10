@@ -18,7 +18,7 @@ export default function MenuItem({ link, label, icon }: Props) {
         pathname.includes(link)
           ? 'bg-blue-500 text-white'
           : 'hover:bg-blue-900 transition-all'
-      } flex items-center gap-x-2 px-4 py-3 rounded-xl`}
+      } flex items-center gap-x-2 px-4 py-2.5 rounded-xl`}
     >
       {ItemIcon}
       {label}
