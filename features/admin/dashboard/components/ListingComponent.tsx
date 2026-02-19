@@ -1,3 +1,4 @@
+'use client'
 import { Card } from "@/components/ui/card";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";

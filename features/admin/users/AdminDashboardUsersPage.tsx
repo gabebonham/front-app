@@ -2,6 +2,7 @@
 
 import AdminHeader from '../components/AdminHeader'
 import AdminSideBar from '../components/AdminSideBar'
+import AdminDashboardUsersPageMainScreen from './components/AdminDashboardUsersPageMainScreen'
 interface Props {
   username: string
   email: string
@@ -17,6 +18,9 @@ export default function AdminDashboardUsersPage({ username, email }: Props) {
         hideInMobile={true}
       />
       <AdminHeader email={email} username={username} />
+      <div>
+        <AdminDashboardUsersPageMainScreen/>
+      </div>
     </div>
   )
 }
